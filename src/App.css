@@ -17,6 +17,17 @@ form {
   margin: 1rem;
 }
 
-div {
-  display: block;
+.github-profile img {
+  width: 75px;
 }
+
+.info {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
