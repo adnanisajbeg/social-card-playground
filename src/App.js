@@ -6,8 +6,11 @@ import Form from './components/Form';
 import Card from './components/Card';
 
 const CardList = (props) => (
-    <div class="card">
-      {props.profiles.map(profile => <Card key={profile.id} {...profile}/>)}
+    <div class="row">
+        {props.profiles.map(profile =>
+        <div class = "col-sm-2">
+            <Card key={profile.id} {...profile}/>
+        </div>)}
     </div>
 );
 
@@ -22,14 +25,10 @@ class App extends React.Component {
   };
   render() {
     return (
-        <div>
+        <div class="container-fluid">
           <div className="header">{this.props.title}</div>
           <Form onSubmit={this.addNewProfile} />
-            <div class="row">
-                <div class="col-sm-6">
-                    <CardList profiles={this.state.profiles} />
-                </div>
-            </div>
+          <CardList profiles={this.state.profiles} />
         </div>
     );
   }

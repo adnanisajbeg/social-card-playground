@@ -5,7 +5,7 @@ class Card extends React.Component {
     render() {
         const profile = this.props;
         return (
-            <div class = "card text-center" className="github-profile" style={{width: 18 + 'rem'}}>
+            <div class = "card text-center" className="github-profile" style={{width: 10 + 'rem'}}>
                 <div className="card-header">
                     GitHub User
                 </div>
